@@ -136,7 +136,7 @@ module Webflow
       result = JSON.parse(response.body)
       raise Webflow::Error.new(result) if response.code >= 400
       puts "------------------------result------------------------"
-      log.error result
+      puts result.inspect
       puts "------------------------result------------------------"
       result
       result
